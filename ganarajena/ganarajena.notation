@@ -1,0 +1,132 @@
+
+# Info
+
+title = gaNaraajena rakshitoham
+type = krti
+composer = muttusvaami diikshitar
+
+## Raga
+
+name = aarabhi
+arohana = S R m P D S+
+avarohana = S+ N D P m G R S
+
+## Tala
+
+name = misra capu
+pattern = , , , | , , | , , ||
+
+# Lyrics
+
+## Pallavi
+
+gaNaraajena rakshitoham guNijananuta pallavapadena
+
+## Samashti Caranam
+
+ANimaadhyashtta-siddhippradena MaaNikyamakuTaadidhareNa
+MantriNi Poojita Sumukhena Maanitaguruguha Vanditena
+Dinakarakotipprakaas’ena Vinataas’rutamandaareNa
+Manupoojita Paas’aangkus’ena KaananasThita BrahmacaryeNa
+
+
+# Translation
+
+A prayer to Lord Ganesh.
+
+I am protected by ...
+
+One who gives all kinds of ‘siddhi-s’ including ‘aNimaa’
+One who is adorned by such jewelry as diamond
+One who is worshiped by ‘Mantrini’
+One who has a beautiful face
+One who is respected by ‘Guruguha’ (Lord Subrammanya)
+One who shines with the brightness of one crore Suns
+One who gives all that is wanted by the devotees
+One who has the ‘binding-thread’ and trident 
+One who dwells as ‘brahmachari’ (unmarried) in a forest
+One who has the soft feet like flower
+
+# Notation
+
+aksharas per line = 14
+
+## Pallavi
+
+m , P , D , P , m G R , S , R , m G R , m , m , P , , , 
+ga _ Na _ raa _ _ _ je _ _ _ na _ ra _ _ _ kshi _ to _ _ _ ham _ _ _
+S , P m P , , , n D , n P , , , m , G m R , , G S , , ,  G R G R m , G m R , , , m , , , m , G m P , , , , , , ,
+
+
+m , P , D S+ D P m P m G R , R P m G R , m , m , P , , , 
+ga _ Na _ raa _ _ _ je _ _ _ na _ ra _ _ _ kshi _ to _ _ _ ham _ _ _
+S , P m P , , , D n D S+ D , , n m , G P m , G m R , , , R G R P m , G m R , , , m , , , m , G m P , , , , , , ,
+
+
+S+ N D D P P m P D P m G R S
+gu Ni ja na nu ta pal _ la va pa de _ na
+S+ , N S+ D , P D P , m P m , P , P D P , m , G m R g S ,
+
+
+m , P , D S+ D P m P m G R , R P m G R , m , m , P , , , 
+ga _ Na _ raa _ _ _ je _ _ _ na _ ra _ _ _ kshi _ to _ _ _ ham _ _ _
+S , P m P , , , D n D S+ D , , n m , G P m , G m R , , , R g R P m , G m R , , ,  m , , , G m , , P , , , , , , ,
+
+_ _ _ _ _ _  _ _ _ _ _ _ _ _ _ _ _ _ _ _ , m m , P , , ,
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ to _ _ ham _ _ _
+_ _ _ _ _ _ _ _ _ _ _ _  _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _  , , m , G m , , P , , , , , , ,
+
+## Samashti Caranam
+
+D , P , m , , , m G R , S , R , m , P , S+ , , D , , P ,
+a _ Ni _ maa _ _ _ dhya _ sh _ Ta _ si _ d _ dhi _ ppra _ _ de _ _ na _
+P m , , D P D , P m G m , , , , m , G m R , , g S , , , R , , , m , , , P , , D D , R+ S+ , , D , , n D , , n P ,
+
+P D S+ , D , P , m P m G R S R , m , P , S+ , , D , , P ,
+a _ Ni _ maa _ _ _ dhya _ _ sh Ta _ si _ d _ ddhi _ p pra _ de _ _ na _
+P , P D R+ , S+ , S+ D , n P , , , m , m P m , m G m R g S R , , , m , , , P , , D D , R+ S+ , , D , , n D , , n P ,
+
+S+ R+ S+ N D D P P m P m G R S R , m , P , S+ , , D , , P ,
+a _ Ni _ maa _ _ _ dhya _ _ sh Ta _ si _ d _ ddhi _ p pra _ de _ _ na _
+N S+ R+ , S+ , N S+ D , P D P , m P m , m P m , G m R g S , R , , , m , , , P , , D D , R+ S+ , , D , , n D , , n P ,
+
+m , , , P , , , D , S+ , N , D , , , P , D , R+ , , , S+ ,
+maa _ _ _ Ni _ _ _ kya _ ma _ ku _ Taa _ _ _ di _ dha _ re _ _ _ Na _
+P m G m , , , , P , , , , , , , S+ D , , S+ D , , S+ , N S+ D , , N D , , N P , , , n D , , n D , , g+ R+ , , g+ S+ , ,
+
+S+ , m , P , , , D , S+ , N , D , , , P , D , R+ , , , S+ ,
+maa _ _ _ Ni _ _ _ kya _ ma _ ku _ Taa _ _ _ di _ dha _ re _ _ _ Na _
+S+ , , , m , , , P , , , , , , , S+ D , , S+ D , , S+ , N S+ D , , N D , , N P , , , n D , , n D , , g+ R+ , , g+ S+ , ,
+
+R+ , , , m+ G+ R+ , , , S+ , , , N , D , m , P , D , , , R+ ,
+man _ _ _ tri _ Ni _ _ _ puu _ _ _ ji _ ta _ su _ mu _ khe _ _ _ na _
+R+ , g+ R+ g+ R+ , , m , G m m+ R+ , , g+ R+ , g+ D S+ , , , , , , S+ , N S+ S+ D , , D m , , P , , , n D , , , , , , n D , R+
+
+S+ , , , N , D , , P m , P , D , , P , , m P m G R , S ,
+maa _ _ _ ni _ ta _ _ gu ru _ gu _ ha _ _ van _ _ di _ te _ _ _ na _
+S+ , , , , , , , S+ N , , S+ D , , , , P , m , , , P , , , n D , , n D , S+ D P , , m , , P m , G m m R , , G S , ,
+
+## Madhyamakala Sahityam
+
+S R m G R , S D P , , m G R D D P , m P S+ N D , D R+ , S+
+di na ka ra ko _ Ti pra kaa _ _ Se _ na vi na taa _ Sru ta  man _ daa _ re _ _ Na
+S , R , m , G m R g R g S S n D , n P , , , m , G m R , S n D n P , , , G P G P D S+ N S+ D n D n D n D g+ R+ , g S+
+
+S+ R+ m+ G+ R+ R+ S+ N D , D R+ , S+ R+ , S+ N D P D , P m G R m P
+ma nu puu _ ji ta paa _ Saan _ ku Se _ na kaa _ na na sThi ta brah _ ma ca r ye _ Na
+S+ , R+ , m+ , G+ m+ R+ g+ R+ g+ S+ , N S+ S+ D , , D n D g+ R+ g S+ , D g+ R+ , g+ S+ N S+ D n P , R , n D n P m , g m R , m , P ,
+
+## Cittasvaram
+
+P , D , P , m , G , R , S , R , m , G , R , S , N , D ,
+P , , , n D , n P , , , m , m , , G , , m R , g S , , , m R , , m R , m m , G m m R , , g S , , S , N S S D , ,
+
+S , , , S , P , D , S , R , m , G , R , m , m , P , , ,
+S , D S , , , , S , , , S P , , S D , , S , , , m R , , m R , , m G , m m R , , m R m , G m , , P , , , , , , ,
+
+D , D , P , m , P , D , S+ , R+ , S+ , R+ , m+ , G+ , R+ , R+ ,
+S , , , n D , n P , , , R , P m P , , , n D n D S+ , , , g+ R , g+ , , , , m R+ , , m+ R+ , , m+ G+ , m+ m+ R+ , , g+ R+ , g
+
+m+ G+ R+ R+ S+ R+ S+ R S+ N D P m P D R+ S+ N D P D S+ D P m G R R
+g+ R+ m G m+ R+ g+ R+ S+ , S+ R+ S+ , S+ R+ S+ , N S+ D n P , G P G P D n D R+ S+ , N S+ D n P , D n D S+ D n P , m , G m R g R g
+                    
