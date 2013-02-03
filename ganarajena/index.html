@@ -132,9 +132,16 @@
 
 
                 function typesetPara(para) {
-                    y += 25;
-                    para.entities.forEach(typesetLine);
-                    y += 25;
+                    if (para.entities.length > 0) {
+                        y += 25;
+                        pushState();
+                        loadState(para);
+                        para.entities.forEach(typesetLine);
+                        popState();
+                        y += 25;
+                    } else {
+                        loadState(para);
+                    }
                 }
 
                 function typesetLine(line) {
