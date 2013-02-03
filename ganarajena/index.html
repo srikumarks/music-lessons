@@ -145,6 +145,20 @@
                 }
 
                 function typesetLine(line) {
+                    if (line.match(/^\s*\>/)) {
+                        return typesetTextLine(line);
+                    } else {
+                        return typesetNotation(line);
+                    }
+                }
+
+                function typesetTextLine(line) {
+                    var content = line.trim().split(/^\>\s*/)[1];
+                    svgelem(svg, 'text', {x: 0, y: y, style: 'font-size: 14pt;'}, content);
+                    y += 25;
+                }
+
+                function typesetNotation(line) {
                     var contents = line.trim().split(/\s+/g).map(show);
                     console.assert(pattern);
                     var pi, pN, i, N, x, j;
