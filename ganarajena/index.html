@@ -3,27 +3,35 @@
 <html>
     <head>
         <meta charset="utf-8"/>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <style>
-            .label { font-size: 18pt; font-weight: bold }
-            .sectionLabel { font-size: 20pt; font-weight: bold; }
+            .labelFont { font-size: 18pt; font-weight: bold }
         </style>
     </head>
     <body>
-        <h1 id="title"></h1>
-        <div class="info">
-            <span id="type"></span> by <span id="composer"></span>
-            <br/>
-            <b>Raga:</b> <span id="raga"></span>
-            | <span id="arohana"></span>
-            | <span id="avarohana"></span>
-            <br/>
-            <b>Tala:</b> <span id="tala"></span>
+        <div class="container">
+            <h1 id="title"></h1>
+            <div class="row">
+                <div class="span6">
+                    <div class="info">
+                        <span id="type"></span> by <span id="composer"></span>
+                        <br/>
+                        <b>Raga:</b> <span id="raga"></span>
+                        | <span id="arohana"></span>
+                        | <span id="avarohana"></span>
+                        <br/>
+                        <b>Tala:</b> <span id="tala"></span>
+                    </div>
+                    <div id="lyrics">
+                    </div>
+                </div>
+                <div class="span6">
+                    <span class="labelFont">Translation</span>
+                    <div id="translation"></div>
+                </div>
+            </div>
         </div>
-        <div id="lyrics">
-        </div>
-        <h2>Translation</h2>
-        <div id="translation"></div>
-        <div class="notation">
+        <div class="notation" style="padding: 16px">
             <svg></svg>
         </div>
         <script src="parser.js"></script>
@@ -79,7 +87,7 @@
                             });
                             element.insertAdjacentHTML('beforeend', '<br/>');
                         } else {
-                            element.insertAdjacentHTML('beforeend', '<br/><span class="label">' + entity.label + '</span><br/>');
+                            element.insertAdjacentHTML('beforeend', '<br/><span class="labelFont">' + entity.label + '</span><br/>');
                             displayBody(entity, element);
                         }
                     });
@@ -87,6 +95,13 @@
             }
 
             function displayNotation(doc, elementSpec) {
+                var kLineSpacing = 22;
+                var kNotationFontSize = 13;
+                var kNotationSmallFontSize = kNotationFontSize - 2;
+                var kSectionHeadingFontSize = 18;
+                var kNotationFont = 'font-family: serif;';
+                var kHorizStretch = 1.6;
+
                 var svg = document.querySelector(elementSpec);
                 console.assert(svg);
 
@@ -111,15 +126,15 @@
                     return state = state.__proto__;
                 }
 
-                state.scale = 1.75;
+                state.scale = kHorizStretch;
                 var iSec, iSecN, iPara, iParaN, x = 0, y = 50, patternIx = 0, width = 0;
                 notation.entities.forEach(function (node, iSec) {
                     if (node.label === 'paragraph') {
                         loadState(node);
                     } else {
-                        y += 25;
-                        svgelem(svg, 'text', {x: 0, y: y, style: 'font-size: 18pt; font-weight: bold;'}, node.label);
-                        y += 25;
+                        y += kLineSpacing;
+                        svgelem(svg, 'text', {x: 0, y: y, style: 'font-size: ' + kSectionHeadingFontSize + 'pt; font-weight: bold;'}, node.label);
+                        y += kLineSpacing;
                         patternIx = 0;
                         pushState();
                         node.entities.forEach(typesetPara);
@@ -133,12 +148,12 @@
 
                 function typesetPara(para) {
                     if (para.entities.length > 0) {
-                        y += 25;
+                        y += kLineSpacing;
                         pushState();
                         loadState(para);
                         para.entities.forEach(typesetLine);
                         popState();
-                        y += 25;
+                        y += kLineSpacing;
                     } else {
                         loadState(para);
                     }
@@ -154,8 +169,8 @@
 
                 function typesetTextLine(line) {
                     var content = line.trim().split(/^\>\s*/)[1];
-                    svgelem(svg, 'text', {x: 0, y: y, style: 'font-size: 14pt;'}, content);
-                    y += 25;
+                    svgelem(svg, 'text', {x: 0, y: y, style: 'font-size: 12pt;'}, content);
+                    y += kLineSpacing;
                 }
 
                 function typesetNotation(line) {
@@ -163,7 +178,7 @@
                     console.assert(pattern);
                     var pi, pN, i, N, x, j;
                     var subdivs = contents.length / parseInt(state['$aksharas per line'], 10);
-                    var style = ('font-size:' + (subdivs > 2 ? 12 : 14) + 'pt;');
+                    var style = ('font-size:' + (subdivs > 2 ? kNotationSmallFontSize : kNotationFontSize) + 'pt; ' + kNotationFont);
                     var lineSpace = 0;
                     for (i = 0, N = contents.length, pi = patternIx, pN = pattern.length, x = 0; i < N; pi = (pi + 1) % pN) {
                         var inst = pattern[pi];
@@ -187,7 +202,7 @@
                                 x += pattern[pi].space * state.scale;
                                 lineSpace = 0;
                             } else if ('line' in pattern[pi]) {
-                                svgelem(svg, 'line', {x1: x, y1: y, x2: x, y2: (y - 25), 'stroke-width': 2, stroke: 'black'});
+                                svgelem(svg, 'line', {x1: x, y1: y, x2: x, y2: (y - kLineSpacing), 'stroke-width': 2, stroke: 'black'});
                                 x += 5;
                                 lineSpace += pattern[pi].line;
                             }
@@ -195,7 +210,7 @@
                     }
 
                     patternIx = pi % pN;
-                    y += 25;
+                    y += kLineSpacing;
                     width = Math.max(x, width);
                 }
             }
