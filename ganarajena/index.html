@@ -163,7 +163,7 @@
                     console.assert(pattern);
                     var pi, pN, i, N, x, j;
                     var subdivs = contents.length / parseInt(state['$aksharas per line'], 10);
-                    var text = svgelem(svg, 'text', {x: 0, y: y, style: ('font-size:' + (subdivs > 2 ? 12 : 14) + 'pt;')});
+                    var style = ('font-size:' + (subdivs > 2 ? 12 : 14) + 'pt;');
                     var lineSpace = 0;
                     for (i = 0, N = contents.length, pi = patternIx, pN = pattern.length, x = 0; i < N; pi = (pi + 1) % pN) {
                         var inst = pattern[pi];
@@ -174,7 +174,7 @@
                             }
                             // Consume one element.
                             for (j = 0; j < subdivs; ++j) {
-                                svgelem(text, 'tspan', {x: x}, contents[i]);
+                                svgelem(svg, 'text', {x: x, y: y, style: style}, contents[i]);
                                 ++i;
                                 x += inst.tick * state.scale / subdivs;
                             }
