@@ -1,0 +1,87 @@
+
+# Info
+
+title = karuṇimpa
+type = varṇam
+composer = Tiruvottiyūr Tyāgayyar
+
+## Raga
+
+name = sahāna
+arohana = S R G m P m D n S+
+avarohana = S+ n D P m G m R G R S
+
+## Tala
+
+name = ādi
+pattern = ,, ,, ,, ,, | ,, ,, | ,, ,, ||
+
+# Lyrics
+
+## Pallavi
+
+karuṇimpa idi manci taruṇamu sāmi
+
+## Anupallavi
+
+parula vēdalēnu nāpāli śri vēṇugōpāla dēva
+
+## Caranam
+
+krpa jūdumi ī vēḷa
+
+# Translation
+
+This is a great time for you to show mercy my lord,
+Sri Venugopala, the one who tends me.
+Show mercy this very moment.
+
+
+# Notation
+
+aksharas per line = 16
+scale = 1.4
+
+## Pallavi
+
+P , m , G , G m R , G R S , , ,     n- S R G R S n- S D- P- m- D- , n- S R
+ka _ ru _ ṇim _ _ _ _ _ _ _ pa _ _ _    i _ _ _ di _ _ _ man _ _ _ _ ci _ _
+
+P m G m R G R S , R G m P m D ,      D n S+ P , , R G m D P P m G m R
+ta _ _ _ _ _ _ ru _ _ _ _ _ _ ṇa _    _ _ _ mu _ _ sā _ _ _ _ _ _ mi _ _
+
+## Anupallavi
+
+D n D D P P D P P m D P m G m R     G m P n- S R G m P , m , D n S+ , 
+pa _ _ ru _ la _ _ _ _ vē _ _ ḍa _ _    lē _ _ nu _ _ _ _ _ _ _ _ _ _ nā _
+
+D n S+ R+ , R+ n S+ R+ G+ m+ R+ , G+ R+ S+    R+ n , S+ D , n D P D P P m G m R
+pā _ _ li _ _ śri _ _ vē _ _ _ ṇu _ _    gō _ _ pā _ _ la _ _ dē _ _ _ va _ _
+
+## Caranam
+
+D , D , , , n , , , n S+ D , n D    P , , , , , D P m G m R G m P m
+kr _ pa _ _ _ jū _ _ _ _ _ _ _ du _  mi _ _ _ _ _ ī _ _ vē _ _ ḷa _ _ _
+
+## Cittasvaram
+
+> One
+P , , , , , m , , , D , P , m ,     G , , m , , R , , G , m , P , m
+
+> Two
+D , P m G m R , G m P n- S R G m    P , m G , m R , G R S R G m P m
+
+> Three
+P D m P G m R G m P m G m R G R     S R n- S D- n- S R G m S R G m P D
+P m D n   S+ R+ S+ R+   n S+ R+ G+  m+ R+ G+ R+   S+ R+ n R+    S+ D n S+   D n D P   D m P m
+
+> Four
+n , , S+   R+ S+ n R+   S+ n S+ n   D , n D   P , , R   , , G m   P m G m   R G R S
+R G m P   , P m P   m D , D   P D n D   P D m P   G m R G    R S , R    G m P ,
+P m G m   R , D P   m G m R   , G m P   n- S , R    G m P m   D , n S+   R+ , R+ ,
+G+ m+ R+ G+   R+ S+ n R+   S+ n S+ D    P m D n   S+ S+ , P    P , R R    , n- S R   G m P m
+
+
+
+
+
