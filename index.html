@@ -43,11 +43,20 @@
         <script src="parser.js"></script>
         <script src="renderer.js"></script>
         <script>
-            function render(url) {
-                org.sriku.NotationRenderer.render('notations/' + url + '.txt', document);
+            function render(notation) {
+                if (!notation) {
+                    if (document.location.hash.length === 0) {
+                        render('ganarajena');
+                    } else {
+                        render(document.location.hash.substr(1));
+                    }
+                } else {
+                    window.location.assign('#'+notation);
+                    org.sriku.NotationRenderer.render('notations/' + notation + '.txt', document);
+                } 
             }
 
-            render('ganarajena');
+            render();
         </script>
     </body>
 </html>
