@@ -11,8 +11,8 @@
     <body>
         <div class="span2">
             <ul>
-                <li><a href="javascript:render('ganarajena')">Ganarajena rakshitoham</a></li>
-                <li><a href="javascript:render('karunimpa')">Karunimpa</a></li>
+                <li><a href="#ganarajena">Ganarajena rakshitoham</a></li>
+                <li><a href="#karunimpa">Karunimpa</a></li>
             </ul>
         </div>
         <div class="container">
@@ -43,20 +43,16 @@
         <script src="parser.js"></script>
         <script src="renderer.js"></script>
         <script>
-            function render(notation) {
-                if (!notation) {
-                    if (document.location.hash.length === 0) {
-                        render('ganarajena');
-                    } else {
-                        render(document.location.hash.substr(1));
-                    }
+            function render() {
+                if (window.location.hash.length === 0) {
+                    window.location = '#ganarajena';
                 } else {
-                    window.location.assign('#'+notation);
-                    org.sriku.NotationRenderer.render('notations/' + notation + '.txt', document);
-                } 
+                    org.sriku.NotationRenderer.render('notations/' + window.location.hash.substr(1) + '.txt', document);
+                }
             }
 
-            render();
+            window.onhashchange = render;
+            window.location = '#ganarajena';
         </script>
     </body>
 </html>
