@@ -79,7 +79,7 @@ org.sriku = org.sriku || {};
             if (element) {
                 var nodes = element.childNodes;
                 Array.prototype.slice.call(nodes).forEach(function (n) {
-                    n.remove();
+                    n.parentNode.removeChild(n);
                 });
             }
             return element;
