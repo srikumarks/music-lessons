@@ -48,15 +48,15 @@ org.sriku = org.sriku || {};
         function displayMeta(doc) {
             var info = find(doc, 'info');
             var infoFields = info.entities[0];
-            q('#title').innerText = infoFields.$title;
-            q('#type').innerText = infoFields.$type;
-            q('#composer').innerText = infoFields.$composer;
+            q('#title').innerHTML = infoFields.$title;
+            q('#type').innerHTML = infoFields.$type;
+            q('#composer').innerHTML = infoFields.$composer;
             var raga = find(info.entities, 'raga').entities[0];
             var tala = find(info.entities, 'tala').entities[0];
-            q('#raga').innerText = raga.$name;
-            q('#arohana').innerText = notationString(raga.$arohana);
-            q('#avarohana').innerText = notationString(raga.$avarohana);
-            q('#tala').innerText = tala.$name;
+            q('#raga').innerHTML = raga.$name;
+            q('#arohana').innerHTML = notationString(raga.$arohana);
+            q('#avarohana').innerHTML = notationString(raga.$avarohana);
+            q('#tala').innerHTML = tala.$name;
             displayBody(find(doc, 'lyrics'), clear(q('#lyrics')));
             displayBody(find(doc, 'translation'), clear(q('#translation')));
 
