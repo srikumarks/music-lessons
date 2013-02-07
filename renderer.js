@@ -105,7 +105,7 @@ org.sriku = org.sriku || {};
             var div = clear(document.querySelector(elementSpec));
             console.assert(div);
             var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-            div.insertAdjacentElement('beforeend', svg);
+            div.insertBefore(svg, null);
 
             var state = {};
             function loadState(node) {
